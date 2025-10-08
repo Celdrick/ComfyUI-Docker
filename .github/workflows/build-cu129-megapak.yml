@@ -58,6 +58,6 @@ jobs:
           build-args: |
             USING_GITHUB_ACTIONS=true
           tags:  |
-            yanwk/comfyui-boot:cu129-megapak
-            yanwk/comfyui-boot:cu129-megapak-${{ steps.date.outputs.date }}
+            celdrick/comfyui-boot:cu129-megapak
+            celdrick/comfyui-boot:cu129-megapak-${{ steps.date.outputs.date }}
           push: true

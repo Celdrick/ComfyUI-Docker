@@ -56,6 +56,6 @@ jobs:
           context: ./cu129-slim
           file: ./cu129-slim/Dockerfile
           tags:  |
-            yanwk/comfyui-boot:cu129-slim
-            yanwk/comfyui-boot:cu129-slim-${{ steps.date.outputs.date }}
+            celdrick/comfyui-boot:cu129-slim
+            celdrick/comfyui-boot:cu129-slim-${{ steps.date.outputs.date }}
           push: true
