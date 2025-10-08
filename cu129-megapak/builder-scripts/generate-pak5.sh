@@ -52,10 +52,15 @@ https://github.com/chflame163/ComfyUI_LayerStyle/raw/refs/heads/main/requirement
 https://github.com/chflame163/ComfyUI_LayerStyle/raw/refs/heads/main/repair_dependency_list.txt
 https://github.com/chflame163/ComfyUI_LayerStyle_Advance/raw/refs/heads/main/requirements.txt
 https://github.com/chflame163/ComfyUI_LayerStyle_Advance/raw/refs/heads/main/repair_dependency_list.txt
+# Qwen Image and Voice nodes
+https://github.com/lenML/comfyui_qwen_image_edit_adv/raw/refs/heads/main/requirements.txt
+https://github.com/AIFSH/QwenImage-ComfyUI/raw/refs/heads/main/requirements.txt
+https://github.com/AIFSH/QwenImage-Diffsynth/raw/refs/heads/main/requirements.txt
+https://github.com/AIFSH/CosyVoice-ComfyUI/raw/refs/heads/main/requirements.txt
 )
 
 for line in "${array[@]}";
-    do curl -w "\n" -sSL "${line}" >> pak5.txt
+    do curl -w "\n" -sSL --retry 3 --retry-delay 2 "${line}" >> pak5.txt 2>/dev/null || echo "# Failed to fetch: ${line}" >> pak5.txt
 done
 
 sed -i '/^#/d' pak5.txt

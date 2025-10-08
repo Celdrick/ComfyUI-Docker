@@ -70,6 +70,12 @@ gcs https://github.com/pythongosssss/ComfyUI-WD14-Tagger.git
 gcs https://github.com/SLAPaper/ComfyUI-Image-Selector.git
 gcs https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
 
+# Qwen Image and Voice nodes
+gcs https://github.com/lenML/comfyui_qwen_image_edit_adv.git
+gcs https://github.com/AIFSH/QwenImage-ComfyUI.git
+gcs https://github.com/AIFSH/QwenImage-Diffsynth.git
+gcs https://github.com/AIFSH/CosyVoice-ComfyUI.git
+
 # To be removed in future
 gcs https://github.com/cubiq/ComfyUI_essentials.git
 gcs https://github.com/cubiq/ComfyUI_FaceAnalysis.git
